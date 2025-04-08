@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://turbo-space-giggle-pxw7vpqwvpq26v5g-8000.app.github.dev/api/users')
+    fetch('https://turbo-space-giggle-pxw7vpqwvpq26v5g-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

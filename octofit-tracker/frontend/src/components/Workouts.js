@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://turbo-space-giggle-pxw7vpqwvpq26v5g-8000.app.github.dev/api/workouts')
+    fetch('https://turbo-space-giggle-pxw7vpqwvpq26v5g-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);
